@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f3f0;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #faf7f0;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: "Georgia", serif;
+    color: #7d5a50;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-style: italic;
+    color: #988575;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fff8e1;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.message.user {
+    text-align: right;
+}
+
+.message.user .text {
+    display: inline-block;
+    background: #e0f7fa;
+    color: #006064;
+    padding: 10px;
+    border-radius: 10px 0 10px 10px;
+}
+
+.message.inti {
+    text-align: left;
+}
+
+.message.inti .text {
+    display: inline-block;
+    background: #fff3e0;
+    color: #5d4037;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #ddd;
+    background: #faf7f0;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: #faf7f0;
+    color: #333;
+}
+
+.input-container button {
+    padding: 15px 20px;
+    background: #7d5a50;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.input-container button:hover {
+    background: #6b4f45;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #faf7f0;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #ddd;
+}
